@@ -42,10 +42,10 @@ if ingredients_list:
         ].iloc[0]
 
         st.subheader(f"{fruit_chosen} Nutrition Information")
-        fruityvice_response = requests.get(
-            f"https://fruityvice.com/api/fruit/{search_on}"
+        SmoothieFroot_response = requests.get(
+            f"https://SmoothieFroot.com/api/fruit/{search_on}"
         )
-        st.dataframe(data=fruityvice_response.json(), use_container_width=True)
+        st.dataframe(data=SmoothieFroot_response.json(), use_container_width=True)
 
     # Prepare SQL insert statement
     my_insert_stmt = f"""
