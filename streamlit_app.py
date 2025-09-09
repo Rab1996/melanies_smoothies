@@ -45,7 +45,7 @@ if ingredients_list:
         SmoothieFroot_response = requests.get(
             f"https://my.SMOOTHIEFROOT.com/api/fruit/{search_on}"
         )
-        st.dataframe(data=SmoothieFroot_response.json(), use_container_width=True)
+        st.dataframe(data=SmoothieFrootAll_response.json(), use_container_width=True)
 
     # Prepare SQL insert statement
     my_insert_stmt = f"""
